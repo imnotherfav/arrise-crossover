@@ -1,0 +1,3 @@
+local passes = game:GetService("Players").LocalPlayer:WaitForChild("leaderstats"):WaitForChild("Passes")
+local success,response = pcall(passes.SetAttribute,passes,"AutoAttack",true)
+print((success and "received autoattack gamepass") or "unable to get gamepass")
